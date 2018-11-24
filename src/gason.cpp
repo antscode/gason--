@@ -366,7 +366,7 @@ jsonParse(char *s, char **endptr, JsonValue *value, JsonAllocator &allocator) {
             if (!(s[0] == 'u' && s[1] == 'l' && s[2] == 'l' && isdelim(s[3])))
                 return JSON_PARSE_BAD_IDENTIFIER;
             o = JsonValue(JSON_FALSE);
-            s += 4;
+            s += 3;
            break;
         case ']':
             if (pos == -1)
